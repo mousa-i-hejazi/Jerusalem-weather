@@ -1,6 +1,7 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  /* allow app to use full viewport width so background images can span edge-to-edge */
+  max-width: 100%;
+  margin: 0;
   padding: 2rem;
   text-align: center;
 }

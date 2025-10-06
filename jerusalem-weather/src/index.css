@@ -30,6 +30,30 @@ body {
   min-height: 100vh;
 }
 
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: url('/src/assets/Morning.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35); /* color overlay with opacity */
+  z-index: 0;
+  pointer-events: none;
+}
+
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;

@@ -1,16 +1,26 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Simple Weather App – Jerusalem Weather Technical Requirements ##
+The Jerusalem Weather App displays the current weather in Jerusalem using the OpenWeatherMap API.
+### Folder Structure ###
+• src/index.jsx — the entry point
+• src/App.jsx — contains the main logic
+• package.json
+• README.md (Documentation)
+### Requirements ###
+1. Weather Card Information contains:
+o current date (in Arabic)
+o current time (updates every 60 seconds)
+o current temperature (in °C)
+o weather description (cloudy, clear, ... etc.)
+o the min and max temperature
+2. The card should have a good design.
+### Functionality ###
+• Fetching data from OpenWeatherMap API.
+• Convert temp from Kelvin to °C using the formula: °C = Kelvin - 273.15.
+• Handle loading (showing "Loading...") during data fetching.
+• Show "Error fetching data" message when something goes wrong.
+### Technologies & Tools ###
+• React.js
+• React Hooks: useState, useEffect
+• JavaScript
+• MUI (for design)
+• OpenWeatherMap API

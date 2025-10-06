@@ -1,34 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import Card from '@mui/material/Card'
+import CardContent from '@mui/material/CardContent'
+import CardMedia from '@mui/material/CardMedia'
+import Typography from '@mui/material/Typography'
+import CardActions from '@mui/material/CardActions'
+import Button from '@mui/material/Button'
+import Box from '@mui/material/Box'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Box
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        minHeight: '100vh',
+        p: 2,
+        position: 'relative',
+        zIndex: 1,
+      }}
+    >
+      <Card sx={{ maxWidth: 450, maxHeight: 600, mx: 70, bgcolor: 'rgba(255, 255, 255, 0.9)'}}>
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div" sx={
+            { textAlign: 'center', fontWeight: 'bold', color: '#b13f02ff'}
+          }>
+            طقس القدس
+          </Typography>
+          sdfghjhgfddfg
+          <Typography variant="body2" color="text.secondary">
+          
+          </Typography>
+        </CardContent>
+      </Card>
+    </Box>
   )
 }
 
