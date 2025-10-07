@@ -12,9 +12,6 @@ import Box from '@mui/material/Box'
 const JERUSALEM_LAT = 31.7683
 const JERUSALEM_LON = 35.2137
 
-// You can put your OpenWeatherMap API key here (for quick local testing).
-// Leaving this empty '' will make the app fall back to VITE_OWM_API_KEY from .env.
-// NOTE: For production it's better to keep keys out of source control.
 const API_KEY = 'd5ffef2daf8c44470a6ac83b41992b52'
 
 function App() {
