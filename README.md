@@ -86,6 +86,9 @@ The project folder should include:
 Run the project locally using:
 
 ```bash
+git clone https://github.com/mousa-i-hejazi/Jerusalem-weather.git
+cd Jerusalem-weather
+cd jerusalem-weather
 npm install
 npm run dev
 ```
